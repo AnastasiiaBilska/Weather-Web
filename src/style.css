@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  background: #859cff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 70%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(255, 255, 255, 0.7),
+    rgb(255, 255, 255, 0.3)
+    );
+    border-radius: 20px;
+    backdrop-filter: blur(2rem);
+    margin: 40px auto;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-family: "Jost", sans-serif;
+  }
+  
+  .search-bar {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border: #859cff;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 600px;
+    padding: 10px 20px;
+  }
+  
+  .search-bar input {
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #859cff;
+  }
+  
+  ::placeholder {
+    color: #859cff;
+  }
+  
+  .search-bar button {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    color: white;
+    background-color:#5361a2;
+    cursor: pointer;
+    transition: ease-in-out ;
+  }
+  .search-bar button:hover {
+    background-color:#859cff;
+  }
+  .heading h1 {
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    padding: 25px 0 8px 0;
+    font-size: 35px;
+    color: #5361a2;
+  }
+  
+  .heading {
+    background: linear-gradient(
+      to right bottom,
+      rgb(255, 255, 255, 0.7),
+      rgb(255, 255, 255, 0.3)
+      );
+      border-radius: 20px;
+    }
+    div.container {
+      max-width: 800px;
+      margin-top: 40px;
+      color: #5361a2;
+      display: flex;
+      flex-direction: column;
+    }
+
+    div.details {
+      padding-top: 4px;
+    }
+    
+    div.col-5 {
+      font-family: "Jost";
+      position: relative;
+    }
+    
+    .city {
+      font-size: 30px;
+    }
+    div.cards {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      text-align: center;
+      align-items: center;
+    padding-top: 25px;
+      justify-content:space-evenly;
+      box-sizing: border-box;
+      
+      
+      
+    }
+
+.card-info {
+  display: flex;
+  margin: 25px;
+  display: block;
+  background-color: rgb(249, 249, 249, 0.6);
+  border-radius: 10px;
+  color:#5361a2;
+  padding: 20px 30px;
+  box-shadow: 6px 6px 20px rgba(72, 64, 77, 0.1);
+  box-sizing: border-box;
+}
+
+
+h5 {
+  padding-bottom: 50px;
+}
+
+.today {
+  display: flex;
+  
+}
+
+.a {
+  color:#5361a2;
+}
+.a:hover {
+  color:#859cff;
+}
