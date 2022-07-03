@@ -117,7 +117,7 @@ main {
       margin: auto;
       text-align: center;
       align-items: center;
-    padding-top: 25px;
+    padding-top: 15px;
       justify-content:space-evenly;
       box-sizing: border-box;
       
@@ -152,4 +152,16 @@ h5 {
 }
 .a:hover {
   color:#859cff;
+}
+.link {
+  color:#859cff;
+}
+.link:hover {
+  color:#5361a2;
+}
+.credits {
+  text-align: center;
+  color: #859cff;
+  
+ 
 }
