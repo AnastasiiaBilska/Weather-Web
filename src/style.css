@@ -133,7 +133,12 @@ div.cards {
   box-sizing: border-box;
 }
 
-
+.icon {
+  width: 100px;
+}
+.forecast-icon {
+  width: 65px;
+}
 
 .today {
   display: flex;
