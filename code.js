@@ -23,8 +23,11 @@ function formatDate(date) {
 function displayWeatherCondition(response) {
   console.log(response.data);
   document.querySelector("#current-city").innerHTML = response.data.name;
+
+  cel = response.data.main.temp;
+
   document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
+   cel
   );
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -32,6 +35,7 @@ function displayWeatherCondition(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
+
 
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
@@ -58,16 +62,18 @@ function currentPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
 }
-function changeFah(event) {
+
+function changeFah (event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 63;
+  let fahTemp = (cel * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahTemp);
 }
 
-function changeCel(event) {
+function changeCel (event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 17;
+  temperatureElement.innerHTML = Math.round(cel); 
 }
 
 let currentTime = document.querySelector("#current-time");
@@ -77,8 +83,12 @@ searchForm.addEventListener("submit", push);
 
 let fah = document.querySelector("#fah");
 fah.addEventListener("click", changeFah);
-let cel = document.querySelector("#cel");
-cel.addEventListener("click", changeCel);
+
+let celLink = document.querySelector("#cel");
+celLink.addEventListener("click", changeCel);
+
+let cel = null;
+
 
 currentTime.innerHTML = formatDate(time);
 
