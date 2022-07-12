@@ -36,6 +36,9 @@ main {
   font-family: "Jost", sans-serif;
 }
 
+.maxmin{
+  font-size: 1px;
+}
 .search-bar {
   width: 100%;
   max-width: 500px;
@@ -131,6 +134,7 @@ div.cards {
   padding: 20px 30px;
   box-shadow: 6px 6px 20px rgba(72, 64, 77, 0.1);
   box-sizing: border-box;
+  text-align: center;
 }
 
 .icon {
@@ -142,6 +146,7 @@ div.cards {
 
 .today {
   display: flex;
+  
 }
 
 .a {
