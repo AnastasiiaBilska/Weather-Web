@@ -12,6 +12,7 @@ main {
   justify-content: center;
 }
 
+
 .glass {
   background: white;
   min-height: 80vh;
@@ -27,6 +28,7 @@ main {
   box-sizing: content-box;
   display: flex;
   flex-direction: column;
+   box-shadow: 6px 6px 20px rgba(72, 64, 77, 0.1);
 }
 .search-box {
   display: flex;
@@ -36,9 +38,7 @@ main {
   font-family: "Jost", sans-serif;
 }
 
-.maxmin{
-  font-size: 1px;
-}
+
 .search-bar {
   width: 100%;
   max-width: 500px;
@@ -93,10 +93,12 @@ main {
     rgb(255, 255, 255, 0.3)
   );
   border-radius: 20px;
+  margin-bottom: 28px;
+   box-shadow: 6px 6px 20px rgba(72, 64, 77, 0.1);
 }
 div.container {
   max-width: 800px;
-  margin-top: 40px;
+  margin-top: 30px;
   color: #5361a2;
   display: flex;
   flex-direction: column;
@@ -112,7 +114,8 @@ div.col-5 {
 }
 
 .city {
-  font-size: 30px;
+  font-size: 32px;
+  font-weight: bold;
 }
 div.cards {
   display: flex;
@@ -124,6 +127,8 @@ div.cards {
   justify-content: space-evenly;
   box-sizing: border-box;
 }
+
+
 
 .col {
   margin: 25px;
@@ -144,10 +149,7 @@ div.cards {
   width: 65px;
 }
 
-.today {
-  display: flex;
-  
-}
+
 
 .a {
   color: #5361a2;
