@@ -23,41 +23,17 @@ function formatDate(date) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 let forecastHTML = `<div class="row">`;
-forecastHTML = forecastHTML + `<div class="col">
-                            <h5>DAY</h5>
-                            <img src="http://openweathermap.org/img/wn/10d@2x.png" class="forecast-icon" alt="">
-                            <span>XX°</span> <span>XX°</span> 
-                            </div>`;
+let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+days.forEach(function (day) {
 
-                        forecastHTML =
-                          forecastHTML + ` <div class="col">
-                            <h5>DAY</h5>
-                            <img src="http://openweathermap.org/img/wn/10d@2x.png" class="forecast-icon" alt="">
-                            <span>XX°</span> <span>XX°</span> 
-                            </div>`;
-                            forecastHTML =
-                              forecastHTML +
-                              ` <div class="col">
-                            <h5>DAY</h5>
-                            <img src="http://openweathermap.org/img/wn/10d@2x.png" class="forecast-icon" alt="">
-                            <span>XX°</span> <span>XX°</span> 
-                            </div>`;
+  forecastHTML = forecastHTML + `<div class="col">
+                              <h5>${day}</h5>
+                              <img src="http://openweathermap.org/img/wn/10d@2x.png" class="forecast-icon" alt="">
+                              <span>XX°</span> <span>XX°</span> 
+                              </div>`
+});
 
-                            forecastHTML =
-                              forecastHTML +
-                              ` <div class="col">
-                            <h5>DAY</h5>
-                            <img src="http://openweathermap.org/img/wn/10d@2x.png" class="forecast-icon" alt="">
-                            <span>XX°</span> <span>XX°</span> 
-                            </div>`;
-
-                            forecastHTML =
-                              forecastHTML +
-                              ` <div class="col">
-                            <h5>DAY</h5>
-                            <img src="http://openweathermap.org/img/wn/10d@2x.png" class="forecast-icon" alt="">
-                            <span>XX°</span> <span>XX°</span> 
-                            </div>`;
+                       
                         forecastHTML = forecastHTML + `</div>`;
 forecastElement.innerHTML = forecastHTML;
   
