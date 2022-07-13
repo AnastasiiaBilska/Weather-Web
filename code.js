@@ -20,6 +20,49 @@ function formatDate(date) {
   return `${days[weekDay]} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+let forecastHTML = `<div class="row">`;
+forecastHTML = forecastHTML + `<div class="col">
+                            <h5>DAY</h5>
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" class="forecast-icon" alt="">
+                            <span>XX°</span> <span>XX°</span> 
+                            </div>`;
+
+                        forecastHTML =
+                          forecastHTML + ` <div class="col">
+                            <h5>DAY</h5>
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" class="forecast-icon" alt="">
+                            <span>XX°</span> <span>XX°</span> 
+                            </div>`;
+                            forecastHTML =
+                              forecastHTML +
+                              ` <div class="col">
+                            <h5>DAY</h5>
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" class="forecast-icon" alt="">
+                            <span>XX°</span> <span>XX°</span> 
+                            </div>`;
+
+                            forecastHTML =
+                              forecastHTML +
+                              ` <div class="col">
+                            <h5>DAY</h5>
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" class="forecast-icon" alt="">
+                            <span>XX°</span> <span>XX°</span> 
+                            </div>`;
+
+                            forecastHTML =
+                              forecastHTML +
+                              ` <div class="col">
+                            <h5>DAY</h5>
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" class="forecast-icon" alt="">
+                            <span>XX°</span> <span>XX°</span> 
+                            </div>`;
+                        forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML;
+  
+}
+
 function displayWeatherCondition(response) {
   console.log(response.data);
   document.querySelector("#current-city").innerHTML = response.data.name;
@@ -93,5 +136,5 @@ let cel = null;
 currentTime.innerHTML = formatDate(time);
 
 navigator.geolocation.getCurrentPosition(currentPosition);
-
 search("New York");
+displayForecast();
