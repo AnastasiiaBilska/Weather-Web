@@ -12,7 +12,6 @@ main {
   justify-content: center;
 }
 
-
 .glass {
   background: white;
   min-height: 80vh;
@@ -28,7 +27,6 @@ main {
   box-sizing: content-box;
   display: flex;
   flex-direction: column;
-   box-shadow: 6px 6px 20px rgba(72, 64, 77, 0.1);
 }
 .search-box {
   display: flex;
@@ -36,9 +34,14 @@ main {
   justify-content: center;
   padding-bottom: 20px;
   font-family: "Jost", sans-serif;
+  border-radius: 20px;
+ box-shadow: 6px 6px 20px rgba(72, 64, 77, 0.1);
+  
 }
 
-
+.maxmin{
+  font-size: 1px;
+}
 .search-bar {
   width: 100%;
   max-width: 500px;
@@ -86,6 +89,10 @@ main {
   color: #5361a2;
 }
 
+div.mb-5 {
+    margin-bottom: 30px!important;
+}
+
 .heading {
   background: linear-gradient(
     to right bottom,
@@ -93,12 +100,12 @@ main {
     rgb(255, 255, 255, 0.3)
   );
   border-radius: 20px;
-  margin-bottom: 28px;
-   box-shadow: 6px 6px 20px rgba(72, 64, 77, 0.1);
+ shadow: 6px 6px 20px rgba(72, 64, 77, 0.1);
+  
 }
 div.container {
   max-width: 800px;
-  margin-top: 30px;
+  margin-top: 40px;
   color: #5361a2;
   display: flex;
   flex-direction: column;
@@ -113,9 +120,11 @@ div.col-5 {
   position: relative;
 }
 
+
 .city {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 600;
+
 }
 div.cards {
   display: flex;
@@ -127,8 +136,6 @@ div.cards {
   justify-content: space-evenly;
   box-sizing: border-box;
 }
-
-
 
 .col {
   margin: 25px;
@@ -149,7 +156,10 @@ div.cards {
   width: 65px;
 }
 
-
+.today {
+  display: flex;
+  
+}
 
 .a {
   color: #5361a2;
